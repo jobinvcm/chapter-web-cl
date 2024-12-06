@@ -2,6 +2,11 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  logging: {
+    fetches: {
+      fullUrl: true,
+    },
+  },
   images: {
     domains: ['images.unsplash.com'], // Add your image domains
     deviceSizes: [640, 750, 828, 1080, 1200],
